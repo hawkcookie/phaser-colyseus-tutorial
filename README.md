@@ -1,4 +1,4 @@
-in production work
+in production work only by browsers
 https://phaser-colyseus-tutorial.vercel.app/
 
 https://user-images.githubusercontent.com/29660904/191643351-a167c7f6-782e-4f8e-adcd-2b822b3cee89.mov
