@@ -12,7 +12,11 @@ type RoomState = {
 };
 // custom scene class
 export class GameScene extends Phaser.Scene {
-  client = new Client('ws://localhost:2567');
+  client = new Client(
+    process.env.NODE_ENV === 'development'
+      ? 'ws://localhost:2567'
+      : 'wss://colyseus-tutorial.herokuapp.com/'
+  );
   room: Room<RoomState>;
   playEntities: { [sessionId: string]: any } = {};
   inputPayload = {
